@@ -1,0 +1,40 @@
+<!--滑块组件 swiper子标签只能为swiper-item,再在里面嵌套别的子标签
+ swiper 默认宽度是100%  高度150px
+ swiper-item 默认宽度为100% 高度100%
+滑块属性：
+indicator-dots              是否出现指示点     true/false
+indicator-color             指示点默认颜色
+indicator-active-color      指示点选中时的颜色
+autoplay                    滑动时自动切换
+interval                    滑块切换间隔的时间ms
+vertical                    滑动方向是否为纵向 布尔值
+circular                    滑块是否为衔接滑动 布尔值
+-->
+<import src="picture-item/picture-item"/>
+<swiper indicator-dots="true" indicator-color="#fff" indicator-active-color="#B22222" autoplay="true" interval="2000" duration="500" circular="true">
+  <swiper-item><image src="/images/img1.jpg"></image></swiper-item>
+  <swiper-item><image src="/images/img2.png"></image></swiper-item>
+  <swiper-item><image src="/images/img3.jpg"></image></swiper-item>
+  <swiper-item><image src="/images/img4.png"></image></swiper-item>
+  <swiper-item><image src="/images/img5.jpg"></image></swiper-item>
+  <swiper-item><image src="/images/img6.jpg"></image></swiper-item>
+</swiper>
+<block wx:for = "{{posts_key}}" wx:for-item = 'item'>
+  <view catchtap="onPostTap" data-postId="{{item.postId}}">
+    <view class='post-container'>
+      <view class='post-author-date'>
+        <image src='{{item.img.author_img}}' class='post-author'></image>
+        <text class='post-date'>{{item.date}}</text>
+      </view>
+      <text class='post-title'>{{item.title}}</text>
+      <image wx:if='{{item.img_condition}}' class='post-image' src='{{item.img.post_img}}'></image>
+      <text class='post-content'>{{item.content}}</text>
+      <view class='post-like'>
+        <image class='post-like-image' src='/images/sc.png'></image>
+        <text class='post-like-font'>{{item.view_num}}</text>
+        <image class='post-like-image' src='/images/unlike.png'></image>
+        <text class='post-like-font'>{{item.collect_num}}</text>
+      </view>
+    </view>
+  </view>
+</block>

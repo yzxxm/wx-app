@@ -1,0 +1,27 @@
+<!--pages/about/about.wxml-->
+<view>
+  <view class="gg">
+    <h1>公告</h1>
+  </view>
+  <view class="info_wrap">
+  <view class="img_wrap">
+    <view class="info">
+      <image class="icon" src="{{url}}"></image>
+      <view class="name">{{name}}</view>
+    </view>
+    <view class="time">{{time}}</view>
+  </view>
+</view>
+  <text>草药晚上9点40 
+  社团每晚晚上10点整
+  (草药的龙坑不要串 不是每个人都不介意自己的坑被别人进了 如果是误会要及时说出解决 互相理解)
+
+  周贡献100 
+  (0贡献会默认为不需要社团)
+  这是个集体需要每个人来维护
+  有任何问题都直接可以提出来
+
+  无论你是谁 都请注意你的言行举止 那都是你素质和接受过的教育程度的证明
+  拒绝低俗 人品第一
+  </text>
+</view>

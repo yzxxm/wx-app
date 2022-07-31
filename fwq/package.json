@@ -1,0 +1,16 @@
+{
+  "name": "fwq",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "silly-datetime": "^0.1.2",
+    "websocket": "^1.0.34"
+  }
+}

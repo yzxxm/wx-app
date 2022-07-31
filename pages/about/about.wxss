@@ -1,0 +1,44 @@
+/* pages/about/about.wxss */
+page {
+  background-color: #eaeaea;
+  color: black;
+  font-size: 32rpx;
+}
+.gg{
+  font-size: larger;
+  color: black;
+  text-align: center;
+}
+.info_wrap {
+  height: 20vh;
+  border-bottom: 1px solid #ccc;
+  /* position: relative; */
+}
+.img_wrap {
+  position: relative;
+}
+
+.img_wrap .info {
+  position: absolute;
+  left: 15%;
+  top: 20%;
+  transform: translate(-50%);
+  text-align: center;
+}
+.info .icon {
+  width: 150rpx;
+  height: 150rpx;
+  border-radius: 50%;
+  margin-top: 40rpx;
+  color: #fff;
+  justify-content: space-around;
+}
+.info{
+  float: left;
+  margin-right: 10px;
+}
+.time{
+  float:left;
+}
+
+

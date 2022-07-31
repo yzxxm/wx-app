@@ -1,0 +1,65 @@
+/* pages/myAddress/myAddress.wxss */
+.item{
+  display:flex;
+  width:140vw;
+  height:10vh;
+  align-items: center;
+  transition:1s;
+  background: #FFFFFF;
+  border-top: 2rpx solid #efefef;
+  font-size: 28.68rpx;
+  color: #333333;
+  padding: 0 20rpx;
+}
+.states{
+  width:10vw;
+  text-align: center;
+}
+.info{
+  flex:1;
+}
+.del{
+  width:20vw;
+  height:10vh;
+  line-height:10vh;
+  text-align: center;
+  background-color: red;
+  color:white;
+}
+.btn{
+  height: 8vh;
+  padding: 0 3vh;
+  position:fixed;
+  width:90%;
+  bottom:55rpx;
+  border:2px dashed #ddd;
+  align-items: center;
+  display: flex;
+  font-size: 3vh;
+}
+.img{
+  width:1vh;
+  height:4vh;
+  flex-grow:1;
+  float:left;
+}
+.huoqu{
+  width:4vh;
+  height:4vh;
+  flex-grow:9;
+  float:left;
+}
+.right{
+  width:3vh;
+  height:3vh;
+  flex-grow: 1;
+  float:right;
+}
+.change{
+  background-color: skyblue;
+  color:white;
+  width:20vw;
+  height:10vh;
+  line-height:10vh;
+  text-align: center;
+}

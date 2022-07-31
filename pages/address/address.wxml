@@ -1,0 +1,41 @@
+<!--pages/address/address.wxml-->
+<view class="list">
+  <view class="item">
+    <text>收货人姓名</text>
+  <view>{{ msg.name }}</view>
+  </view>
+
+  <view class="item">
+    <text>邮编</text>
+  <view>{{ msg.email }}</view>
+  </view>
+
+  <view class="item">
+    <view>地区</view>
+      <view style="display:flex">
+        <view>
+          {{msg.area[0]}} {{msg.area[1]}} {{msg.area[2]}}
+        </view>
+    </view>
+  </view>
+
+  <view class="item">
+    <text>详细地址</text>
+  <view>{{ msg.address }}</view>
+  </view>
+
+  <view class="item">
+    <text>电话</text>
+  <view>{{ msg.tel }}</view>
+  </view>
+
+  <view bindtap="myAddress" class="btn">
+      <image class="img" src="/images/6.png"></image>
+      <view class="huoqu" bindtap="myAddress">获取收货地址</view>
+    <image class="right" src="/images/right.png"></image>
+  </view>
+  </view>
+
+
+
+

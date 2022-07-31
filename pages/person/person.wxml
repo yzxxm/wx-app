@@ -1,0 +1,49 @@
+<!-- 个人信息 -->
+<view class="user_info_wrap">
+  <view class="user_img_wrap">
+    <image class="user_bg" src="{{userInfo.authUrl}}"></image>
+    <view class="user_info">
+      <image class="user_icon" src="{{userInfo.authUrl}}"></image>
+      <view class="user_nickname">{{userInfo.nickName}}</view>
+    </view>
+  </view>
+</view>
+<!-- 历史 -->
+<view class="his_info_wrap">
+  <view class="his_info">
+    <!-- 收藏等 -->
+    <view class="his_content">
+      <navigator>
+        <view class="his_num">0</view>
+        <view class="his_name">作品</view>
+      </navigator>
+      <navigator>
+        <view class="his_num">0</view>
+        <view class="his_name">收藏</view>
+      </navigator>
+      <navigator>
+        <view class="his_num">0</view>
+        <view class="his_name">喜欢</view>
+      </navigator>
+      <navigator>
+        <view class="his_num">0</view>
+        <view class="his_name">私密</view>
+      </navigator>
+    </view>
+    <!--个人资料-->
+    <view bindtap="detail" class="list-item">
+    <text>个人资料</text>
+    </view>
+    <!-- 地址 -->
+    <view bindtap="address" class="address_content">地址管理</view>
+    <!-- 应用 -->
+    <view class="app_content">
+      <view bindtap="call" class="contact">
+        <text>联系客服</text>
+        <text>15817767649</text>
+      </view>
+      <view bindtap="advice" class="idea">意见反馈</view>
+      <view bindtap="about" class="about">关于我们</view>
+    </view>
+  </view>
+</view>

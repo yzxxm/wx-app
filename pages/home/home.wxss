@@ -1,0 +1,35 @@
+.bg{
+  width:100vw;
+  height:100vh;
+  /* vw vh  响应式长度单位 */
+}
+.player{
+  position:fixed;
+  top:3vh;
+  right:1vh;
+  z-index: 1;
+}
+.icon{
+  width:10vh;
+  height:10vh;
+  /* 动画： 动画名称 动画执行时长 动画执行速率 动画执行次数 */
+  animation: play 5s linear infinite;
+}
+.play{
+  width:3vh;
+  height:8vh;
+  transition: 1s;
+  /* 旋转中心 */
+  transform-origin: top center;
+}
+/*关键帧动画*/
+@keyframes play{
+  0%{}
+  100%{
+    transform: rotate(360deg);
+  }
+}
+
+
+
+

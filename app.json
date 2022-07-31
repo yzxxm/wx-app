@@ -1,0 +1,68 @@
+{
+  "pages": [
+    "pages/home/home",
+    "pages/picture/picture",
+    "pages/chat/chat",
+    "pages/movies/movies",
+    "pages/index/index",
+    "pages/person/person",
+    "pages/logs/logs",
+    "pages/detail/detail",
+    "pages/update/update",
+    "pages/address/address",
+    "pages/myAddress/myAddress",
+    "pages/addAddress/addAddress",
+    "pages/advice/advice",
+    "pages/about/about",
+    "pages/blog/blog",
+    "pages/picture-detail/picture-detail",
+    "pages/chat-detail/chat-detail"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#B22222",
+    "navigationBarTitleText": "诗人侦探",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/home/home",
+        "text": "诗人侦探",
+        "iconPath": "/images/guest.png",
+        "selectedIconPath": "/images/guest.png"
+      },
+      {
+        "pagePath": "pages/picture/picture",
+        "text": "文与字",
+        "iconPath": "/images/navi.png",
+        "selectedIconPath": "/images/navi.png"
+      },
+      {
+        "pagePath": "pages/movies/movies",
+        "text": "光与影",
+        "iconPath": "/images/video.png",
+        "selectedIconPath": "/images/video.png"
+      },
+      {
+        "pagePath": "pages/chat/chat",
+        "text": "聊天消息",
+        "iconPath": "/images/invite.png",
+        "selectedIconPath": "/images/invite.png"
+      },
+      {
+        "pagePath": "pages/person/person",
+        "text": "个人中心",
+        "iconPath": "/images/marry.png",
+        "selectedIconPath": "/images/marry.png"
+      }
+    ],
+    "selectedColor": "#B22222",
+    "backgroundColor": "#B22222",
+    "borderStyle": "black",
+    "position": "bottom"
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json",
+  "lazyCodeLoading": "requiredComponents"
+}

@@ -1,0 +1,15 @@
+.item{
+  height: 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 2vh;
+}
+.item image{
+  height: 6vh;
+  width: 6vh;
+  border-radius: 50%;
+}
+.update{
+  margin-top: 400rpx;
+}

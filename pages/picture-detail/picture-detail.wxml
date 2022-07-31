@@ -1,0 +1,22 @@
+<!--pages/picture-detail/picture-detail.wxml-->
+<view class='container'>
+  <image class='audio' src='/images/yy.jpg'></image>
+  <image class='head-imagee' src='/images/05.png'></image>
+  <view class='author-date'>
+    <image class='avatar' src='/images/me.jpg'></image>
+    <text class='author'>J_King</text>
+    <text class='const-text'>发表于</text>
+    <text class='date'>3天前</text>
+  </view>
+  <text class='title'>不忘初心</text>
+  <view class='tool'>
+    <view class='cicle-img'>
+      <image  src='/images/sc.jpg'></image>
+      <image class='share-img' src='/images/navi.png'></image>
+    </view>
+    <view class='horizon'></view>
+  </view>
+  <text class='detail'>
+  有时候人就是这样，遇到再大的事儿自己扛，忍忍就过去了，可听到身旁的人一句安慰就瞬间完败。于是后来才明白，我们怕的不是冷漠 ，怕的是突然的温柔。怕的不是自己吃苦，怕的是身边的人为你难过。怕的不是孤独，怕的是辜负。
+  </text>
+</view>

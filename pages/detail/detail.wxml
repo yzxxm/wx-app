@@ -1,0 +1,25 @@
+<!--pages/detail/detail.wxml-->
+<view class="list">
+  <view class="item">
+  <text>头像</text>
+  <image bindtap="changeimg" src="{{ url }}"></image>
+</view>
+<view class="item">
+  <text>昵称</text>
+  <text>{{ name }}</text>
+</view>
+<view class="item">
+  <text>性别</text>
+  <text>{{ sex }}</text>
+</view>
+<view class="item">
+  <text>拍一拍</text>
+  <text>{{ pai }}</text>
+</view>
+<view class="item">
+  <text>账号</text>
+  <text>{{ user }}</text>
+</view>
+<button class="update" bindtap="update">修改</button>
+</view>
+

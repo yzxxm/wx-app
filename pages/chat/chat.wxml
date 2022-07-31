@@ -1,0 +1,104 @@
+<!--pages/chat/chat.wxml-->
+  <!--搜索框  -->
+<view class="weui-search-bar">
+  <view class="weui-search-bar__form">
+    <!--点击之后，出现input框  -->
+    <view class="weui-search-bar__box">
+      <icon class="weui-icon-search_in-box" type="search" size="14"></icon>
+      <input type="text" class="weui-search-bar__input" placeholder="添加好友" value="{{inputVal}}" focus="{{inputShowed}}" bindinput="inputTyping" />
+      <!--输入款字数大于0，则显示清除按钮  -->
+      <view class="weui-icon-clear" wx:if="{{inputVal.length > 0}}" bindtap="clearInput">
+        <icon type="clear" size="14"></icon>
+      </view>
+    </view>
+    <!--没点击之前，只是一些文字和图标  -->
+    <label class="weui-search-bar__label" hidden="{{inputShowed}}" bindtap="showInput">
+      <icon class="weui-icon-search" type="search" size="14"></icon>
+      <view class="weui-search-bar__text">添加好友</view>
+    </label>
+  </view>
+  <!--动态出现的“取消”键  -->
+  <view class="weui-search-bar__cancel-btn" hidden="{{!inputShowed}}" bindtap="hideInput">取消</view>
+</view>
+
+    <view class="container chat">
+
+      <view class="chat-item flex-wrp">
+        <view class="avatar flex-item">
+          <image src="/images/fm.png"></image>
+        </view>
+        <view class="chat-content flex-item">
+          <view class="chat-source">
+            <text class="chatmate">加肥菲猫</text>
+            <text class="lasttime">3 小时前</text>
+          </view>
+          <text class="chat-txt">一起组队背单词吧</text>
+        </view>
+      </view>
+      <view class="chat-item flex-wrp">
+        <view class="avatar flex-item">
+          <image src="/images/xm.png"></image>
+        </view>
+        <view class="chat-content flex-item">
+          <view bindtap="chat" class="chat-source">
+            <text class="chatmate">小美客服</text>
+            <text class="lasttime">1 天前</text>
+          </view>
+          <text class="chat-txt">我觉得都挺好的唉</text>
+        </view>
+      </view>
+      <view class="chat-item flex-wrp">
+        <view class="avatar flex-item">
+          <image src="/images/tn.png"></image>
+        </view>
+        <view class="chat-content flex-item">
+          <view class="chat-source">
+            <text class="chatmate">托尼金梓拓</text>
+            <text class="lasttime">2 天前</text>
+          </view>
+          <text class="chat-txt">峡谷</text>
+        </view>
+      </view>
+      <view class="chat-item flex-wrp">
+        <view class="avatar flex-item">
+          <image src="/images/jingyu.png"></image>
+        </view>
+        <view class="chat-content flex-item">
+          <view class="chat-source">
+            <text class="chatmate">鲸鱼刺</text>
+            <text class="lasttime">1 个月前</text>
+          </view>
+          <text class="chat-txt">满满，谢谢你。但是我真的没有精力了</text>
+        </view>
+      </view>
+      <view class="chat-item flex-wrp">
+        <view class="avatar flex-item">
+          <image src="/images/xj.png"></image>
+        </view>
+        <view class="chat-content flex-item">
+          <view class="chat-source">
+            <text class="chatmate">小蒋酱酱</text>
+            <text class="lasttime">3 个月前</text>
+          </view>
+          <text class="chat-txt">未经他人苦，莫劝他人善好吧</text>
+        </view>
+      </view>
+      <view class="chat-item flex-wrp">
+        <view class="avatar flex-item">
+          <image src="/images/bl.png"></image>
+        </view>
+        <view class="chat-content flex-item">
+          <view class="chat-source">
+            <text class="chatmate">菠萝汤糖躺烫</text>
+            <text class="lasttime">6 个月前</text>
+          </view>
+          <text class="chat-txt">要有啥建议我随叫随到！慢慢做！</text>
+        </view>
+      </view>
+
+ 
+  
+
+
+</view>
+

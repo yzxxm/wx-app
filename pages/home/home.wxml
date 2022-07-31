@@ -1,0 +1,10 @@
+<image class ="bg" src="/images/adatar1.png"></image>
+
+<audio id="music" src="http://music.163.com/song/media/outer/url?id=1411718813.mp3"></audio>
+
+<view bindtap="playMusic" class="player">
+  <image style="animation-play-state:{{ playFlag? 'running':'paused' }}"class="icon" src="/images/music_icon.png"></image>
+  <image style="transform:rotate({{ playFlag?'20deg':'0deg' }})" class="play" src="/images/music_play.png"></image>
+</view>
+
+  

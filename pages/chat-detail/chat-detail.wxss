@@ -1,0 +1,50 @@
+/* pages/chat-detail/chat-detail.wxss */
+/* pages/home/home.wxss */
+.scroll{
+  height: 90vh;
+  background-color: #ddd;
+}
+.sendMsg{
+  height: 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.send{
+  height: 8vh;
+  line-height: 8vh !important;
+  margin: 0;
+  width: 20vw !important;
+}
+input{
+  flex: 1;
+  font-size: 3vh;
+}
+
+.pic{
+  width: 6vh;
+  height: 6vh;
+  border-radius: 50%;
+}
+.item{
+  padding: 2vh;
+}
+.text{
+  font-size: 3vh;
+  line-height: 5vh;
+  max-width: 80vw;
+  padding: 1vh 2vh;
+}
+.left{
+  display: flex;
+}
+.right{
+  display: flex;
+  flex-direction: row-reverse;
+}
+.left .text{
+  background-color: cornflowerblue;
+}
+.right .text{
+  background-color: #a9a9a9;
+}

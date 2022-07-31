@@ -1,0 +1,47 @@
+<form bindsubmit="submitForm" class="list">
+<view class="redact-address">
+  <view class="possess-layout">
+    <view class="mains">
+      <view class="item">
+        <view class="item-msg">收货人</view>
+        <view class="section">
+          <input type="text" placeholder="请填写收货人姓名" value="{{name}}" placeholder-class="phcolor"></input>
+        </view>
+        <view class="address-right">
+          <image src="/images/me.png"></image>
+        </view>
+      </view>
+      <view class="item">
+        <view class="item-msg">手机号码</view>
+        <view class="section">
+          <input type="number" placeholder="请填写收货人手机号码" value="{{tel}}" maxlength="11"  placeholder-class="phcolor"></input>
+        </view>
+      </view>
+      <view class="item">
+        <view class="item-msg">
+          <picker name="area" bindchange="picker" mode="region" >
+          选择所在市区:  {{ area[0] }} {{ area[1] }} {{ area[2] }}
+          </picker>
+        </view>
+      </view>
+      <view class="item">
+        <view class="item-msg">详细地址</view>
+        <view class="section">
+          <input type="text" placeholder="街道、楼牌号等" value="{{address}}" bindblur="addressInput" placeholder-class="phcolor"></input>
+        </view>
+      </view>
+      <view class="label">
+        <view class="label-title">标签</view>
+        <view class="label-list">
+          <block wx:for="{{labelList}}" wx:key="index">
+            <view class="labels {{labelDefault==index? 'labels-active': ''}}" data-index="{{index}}">{{item}}</view>
+          </block>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
+ 
+<button class="button" form-type="submit">保存</button>
+</form>
+    
